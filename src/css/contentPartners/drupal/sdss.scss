@@ -1,0 +1,89 @@
+$alignmentIndent: 0;
+$alignmentSpace: 50px;
+
+/* Main Fixes */
+.su-page-content {
+
+    /* Image Alignment */
+    figure.align-right {
+        float: right;
+        margin-left: $alignmentSpace;
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 220px;
+    }
+
+    figure.align-left {
+        float: left;
+        margin-right: $alignmentSpace;
+        margin-left: $alignmentIndent;
+        margin-bottom: 1em;
+        width: 220px;
+    }
+
+
+    /* Images Caption */
+    figure.caption {
+    
+        margin-top: 3.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        figcaption {
+            font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.2em;
+            font-weight: 400;
+            margin: 0 auto;
+            color: rgb(109, 108, 105);
+            max-width: 633px;
+            text-align: left;
+            clear: both;
+            padding-top: 0.4em;
+            font-style: normal;
+        }
+
+        img {
+            margin-bottom: 0px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        figure.caption {
+            figcaption {
+                max-width: 582px;
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+        figure.align-right{
+            margin-right: 0;
+        }
+        figure.align-left{
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        figure.align-left,
+        figure.align-right {
+            margin: 0 auto;
+            float: none;
+            max-width: 100%;
+        }
+    }
+}
+
+/* Dark Mode fixes */
+.su-dark {
+    .su-page-content {
+
+        /* Image Captions */
+        figure.caption {
+            figcaption {
+                color: #FFF;
+            }
+        }
+    }
+}

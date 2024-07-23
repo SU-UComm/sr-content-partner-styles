@@ -1,0 +1,151 @@
+.bottom-right-text {
+  content: "";
+  position: absolute;
+  bottom: 0.8em;
+  right: 1.2em;
+  color: #820000;
+  font-family: "Source Serif Pro";
+  font-size: 0.9em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.small-square {
+  color: #5f574f;
+  position: absolute;
+  top: 0;
+  margin: 0 0 0 -15px;
+  content: '\25AA';
+}
+.gallery.align-center {
+  margin-bottom: 3em;
+}
+.t-gallery {
+  line-height: 0;
+}
+.t-gallery.pull-right {
+  margin-right: 10px;
+}
+.t-gallery img {
+  width: 100%;
+  height: auto;
+}
+.t-gallery a img {
+  display: block;
+  float: left;
+}
+.t-gallery figure {
+  width: 49%;
+  position: relative;
+  height: 100%;
+  margin: 0 0 3px 0;
+  z-index: 2;
+  display: inline-block;
+}
+.t-gallery figcaption {
+  display: none;
+}
+.t-gallery p {
+  width: 100%;
+  height: 99%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 20000;
+  overflow: hidden;
+}
+.t-gallery p.see-all {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding-top: 28%;
+}
+.gallery.layout-grid .t-gallery figure {
+  overflow: hidden;
+}
+.gallery.layout-grid .t-gallery figure a:focus img {
+  outline: thin dotted;
+  outline: 2px solid #5f574f;
+  text-decoration: none;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline-offset: -4px;
+  outline-width: 8px;
+  outline-style: double;
+}
+.gallery.layout-grid .t-gallery figure a img {
+  max-width: 100%;
+  max-height: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translateZ(0) scale(1, 1);
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0) scale(1, 1);
+}
+/* Popup galleries */
+.modal-content .gallery-image {
+  margin: -13px -12px 1em;
+}
+.modal-content .gallery-image .media-attrib {
+  display: block;
+}
+
+.gallery.layout-grid .t-gallery figure a img:hover {
+  -moz-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery.layout-grid.columns-4 .t-gallery figure {
+    width: 33%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery.layout-grid.columns-4 .t-gallery figure {
+    width: 24.5%;
+  }
+}
+@media (min-width: 768px) {
+  .gallery.layout-grid.columns-3 .t-gallery figure {
+    width: 33%;
+  }
+}
+.gallery-fullscreen.pull-right {
+  margin-right: 10px;
+  width: auto;
+}
+.gallery-fullscreen:hover {
+  cursor: pointer;
+}
+.gallery-fullscreen:focus {
+  outline: thin dotted;
+  outline: 2px solid #5f574f;
+  text-decoration: none;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.pswp__ui--idle .pswp__button--arrow--left,
+.pswp__ui--idle .pswp__button--arrow--right {
+  opacity: 1 !important;
+}
+.pswp__caption a {
+  color: #BBB;
+}
+@media (max-width: 767px) {
+  .t-gallery.pull-right,
+  .gallery-counter.pull-left {
+    width: auto;
+  }
+  .pull-right.pull-right-wide {
+    margin-bottom: 0;
+  }
+}
+
+  /* Alignment of component inside panels - STANFORD-1007 */
+    @media (min-width: 1200px) {
+       .su-page-content .panel-collection .news-component .col-lg-offset-2 {
+            margin-left: 16.66666667%;
+        }
+    }

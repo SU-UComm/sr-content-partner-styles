@@ -1,0 +1,46 @@
+/* Main Styles */
+.su-page-content {
+
+    /* Image Captions */
+    figure.wp-block-image {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        figcaption.wp-element-caption {
+            font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.2em;
+            font-weight: 400;
+            margin: 0.4em auto;
+            color: rgb(109, 108, 105);
+            max-width: 633px;
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 767px) {
+        figure.wp-block-image {
+            figcaption.wp-element-caption {
+                max-width: 582px;
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+
+    }
+}
+
+/* Dark Mode fixes */
+.su-dark {
+    .su-page-content {
+
+        /* Image Captions */
+        figure.wp-block-image {
+            figcaption.wp-element-caption {
+                color: #FFF;
+            }
+        }
+    }
+}

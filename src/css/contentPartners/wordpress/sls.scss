@@ -1,0 +1,84 @@
+$alignmentIndent: 0;
+$alignmentSpace: 50px;
+
+.su-page-content {
+
+    /* Images Alignment */
+    .alignleft {
+        margin-left: $alignmentIndent;
+        margin-right: $alignmentSpace;
+        margin-bottom: 1em;
+        float: left;
+    }
+
+    .alignright {
+        margin-right: $alignmentIndent;
+        margin-left: $alignmentSpace;
+        margin-bottom: 1em;
+        float: right;
+    }
+
+    /* Images Caption */
+    figure.wp-caption {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        figcaption.wp-caption-text {
+            font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.2em;
+            font-weight: 400;
+            margin: 0 auto;
+            color: rgb(109, 108, 105);
+            max-width: 633px;
+            text-align: left;
+            clear: both;
+            padding-top: 0.4em;
+        }
+
+        img {
+            margin: 0 !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        figure.wp-caption {
+            figcaption.wp-caption-text {
+                max-width: 582px;
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+
+        .alignleft {
+            margin-left: 0;
+        }
+        .alignright {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .alignleft,
+        .alignright {
+            margin: 0 auto;
+            float: none;
+            max-width: 100%;
+        }
+    }
+}
+
+/* Dark Mode fixes */
+.su-dark {
+    .su-page-content {
+
+        /* Image Captions */
+        figure.wp-caption {
+            figcaption.wp-caption-text {
+                color: #FFF;
+            }
+        }
+    }
+}

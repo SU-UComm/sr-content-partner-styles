@@ -1,0 +1,433 @@
+.su-page-content {
+
+    /* General Fixes */
+    .panel-collection {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: calc(-50vw + 16.66%);
+    }
+
+    .panel-collection>.container {
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+    }
+
+    /*
+.panel-collection > .panel {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+*/
+    @media (max-width: 991px) {
+        .panel-collection {
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .panel-collection>.container {
+            width: 735px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .panel-collection>.container {
+            width: 955px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .panel-collection>.container {
+            width: 1155px;
+        }
+    }
+
+    /* Fix for Empty paragraphs */
+    p:empty {
+        display: none;
+        margin: 0;
+    }
+
+    /* Panels Fixes :: Cards Box & Infobox */
+    .panel-collection .panel h6,
+    .story-supplement-content .sidebar-infobox {
+        font-size: 0.85em;
+    }
+
+    .panel.panel-card .card-content a.btn,
+    .story-supplement-content a.btn {
+        font-size: 0.85em;
+    }
+
+    .story-supplement-content a.btn {
+        margin-top: 1.0em;
+    }
+
+    /* Masonry Fixes */
+    .masonry-highlight .topic-filter input[type="radio"]+label,
+    .masonry-highlight .topic-filter input[type="checkbox"]+label {
+        z-index: 10;
+        font-size: 0.75em;
+    }
+
+    .news-component .card-content h3 {
+        clear: none !important;
+        font-size: 0.9em;
+    }
+
+    .masonry-highlight .panel.panel-card .card-content h3,
+    .masonry-highlight .panel.panel-card .card-content h4,
+    .masonry-highlight .panel.panel-card .card-content h5,
+    .masonry-highlight .panel.panel-card .card-content h6,
+    .masonry-highlight .panel.panel-card .card-content ul,
+    .masonry-highlight .panel.panel-card .card-content ol {
+        font-size: 0.85em;
+        margin-top: 0.2em;
+        clear: none;
+    }
+
+    .masonry-highlight .panel.panel-card .card-content p {
+        font-size: 0.75em;
+    }
+
+    /* Content Images Caption Fix */
+    .pull-left-wide .media-caption,
+    .pull-left-narrow .media-caption,
+    .pull-left-portrait .media-caption,
+    .pull-right-wide .media-caption,
+    .pull-right-narrow .media-caption,
+    .pull-right-portrait .media-caption {
+        font-size: 0.85em;
+    }
+
+    /* Related Story */
+    .card.related-story h2,
+    .card.related-stories h2 {
+        margin-top: 1.25em !important;
+        font-size: 1.0em;
+    }
+
+    .card.related-stories h3 {
+        margin-top: 0px !important;
+        clear: none;
+    }
+
+    .story-supplement-content .card-content h3 {
+        clear: none;
+        margin-top: 0px !important;
+        ;
+    }
+
+    /* Side by Side images */
+    .panel-collection .media-caption p.media-caption i {
+        font-style: italic;
+        margin-bottom: 0.25em;
+    }
+
+    /* Parralax Z-Index Fix */
+    .panel-collection>.slide.news-component {
+        z-index: 10;
+    }
+
+    .panel-collection .slide .social-share li::before {
+        display: none;
+    }
+
+    .panel-collection .slide .social-share li {
+        padding-left: 0px;
+    }
+
+    /* Image inside Content with push */
+    .panel-collection .row .col-md-push-3:has(.media-caption) {
+        left: 16.66666667%;
+    }
+
+    /* Alignment of component inside panels */
+    @media (min-width: 1200px) {
+        .panel-collection .col-lg-offset-2 {
+            margin-left: 8.33333333%;
+        }
+    }
+
+    /* Media Attrib and Caption for Panels */
+    /*.panel-collection .media-attrib,
+    .panel-collection .media-caption {
+        font-size: 0.9375em;
+    }*/
+
+    /* Modal Font-size changes */
+    .modal-content h3 {
+        font-size: 1.1em;
+        margin-bottom: 0px !important;
+    }
+
+    .modal-content .btn {
+        font-size: 0.85em;
+    }
+
+    /* Stories Masonry Width Change */
+    .panel-collection .panel.stories-masonry {
+        width: 72%; /*80%;*/
+    }
+
+    .panel-collection .panel.stories-masonry h3 {
+        margin-top: 0;
+        clear: none;
+    }
+
+    /* Annotated image Font-size chanegs */
+    .annotated-image foreignObject p {
+        font-size: 0.7em !important;
+    }
+
+    /* Modal backdrop */
+    .modal.fade.news-component.in::before {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        content: "";
+        opacity: 0.5;
+    }
+
+    /* Modal link icon */
+    .modal.fade.news-component.in li::before {
+        position: static;
+        background-color: transparent;
+        display: inline-block;
+        margin-left: -1.6em;
+        width: 1.6em;
+        font-family: FontAwesome;
+        font-size: 0.9em;
+        content: "\f138";
+        color: #8c1515;
+    }
+
+    .modal-content h3 {
+        font-size: 1.0em;
+    }
+
+    .modal-body {
+        font-size: 0.9em;
+    }
+
+    /* Contrast fix for Masonry */
+    #masonry-highlight-1 .card[data-topic="film"] .meta {
+        background-color: #c25700;
+    }
+
+    @media (max-width: 767px) {
+        .card-content h6 {
+            clear: none;
+        }
+
+        .news-component.pull-right a,
+        .news-component.pull-left a {
+            display: block;
+        }
+
+        .news-component.pull-right a img,
+        .news-component.pull-left a img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    .panel-collection .news-component h2,
+    .panel-collection .news-component h3,
+    .panel-collection .news-component h4,
+    .panel-collection .news-component h5,
+    .panel-collection .news-component h6 {
+        margin-top: 1.6em;
+    }
+
+    /* Media Caption fix for STANFORD-876 */
+    .align-center.hidden-print >  p.media-caption,
+    .panel-collection p.media-caption,
+    .panel-collection figcaption,
+    .news-component p.media-caption,
+    .pull-right>p.media-caption,
+    .pull-left>p.media-caption {
+        font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.2em;
+        font-weight: 400;
+        margin: 0.4em 0; /*0.4em auto*/
+        /* color: rgb(46, 45, 41);*/
+        color: #000;
+        max-width: 633px;
+        text-align: left;
+    }
+
+    .align-center>div.media-attrib,
+    .pull-right>div.media-attrib,
+    .pull-left>div.media-attrib {
+        font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.2em;
+        font-weight: 400;
+        /* color: rgb(109, 108, 105); */
+        /*max-width: 633px;*/
+        color: #000;
+        text-align: right;
+    }
+
+    .news-component p.media-caption .media-attrib {
+        font-size: inherit;
+    }
+
+    .mugshot.news-component p.media-caption {
+        text-align: center;
+    }
+
+    .col-md-12:has(.media-caption),
+    .col-md-10:has(.media-caption),
+    .col-md-9:has(.media-caption) {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+
+        .panel-collection p.media-caption,
+        .panel-collection figcaption,
+        .news-component p.media-caption {
+            max-width: 582px;
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+    }
+
+    .acknowledgement.news-component {
+        padding-left: 0;
+        padding-right: 0;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 10rem;
+            height: 0.6rem;
+            background-image: linear-gradient(to right, rgb(177, 4, 14), rgb(130, 0, 0));
+            margin-bottom: 3.6rem;
+        }
+
+        .su-dark &::before {
+            background-image: linear-gradient(to right, rgb(39, 153, 137), rgb(143, 153, 62));
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        @media (max-width: 767px) {
+            p {
+                font-size: 15px;
+                line-height: 22.4px;
+            }
+        }
+    }
+
+    /* Alignment of items to be inside the content area: STANFORD-834 */
+    .align-center.center-block,
+    .align-center.hidden-print{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .align-center.hidden-print > p.media-caption,
+    .pull-left-wide,
+    .pull-left-narrow,
+    .pull-left-portrait {
+        margin-left: 0;
+    }
+
+    /* Smaller Font-size for Related Stories */
+    .related-story.card .card-content h3 {
+        font-size: 0.85em;
+        margin-top: 0;
+    }
+
+    .related-story.card .card-content p {
+        font-size: 0.75em;
+    }
+
+    .card .card-content .meta {
+        line-height: 1.25em;
+        text-transform: capitalize;
+        font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    /* Gallery Fix */
+    .align-center.gallery {
+        display: block;
+    }
+    .t-gallery img,
+    .t-gallery p.see-all{
+        width: 99%;
+    }
+    
+    /* Media Contact */
+    .mediaContacts {
+        font-family:"Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        clear: both;
+        
+        h2, h3 {
+            font-size: 2.3rem;
+            font-family:"Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        p {
+            line-height: 1.25;
+            margin: 0 !important;
+            font-size: 2.1rem;
+        }
+    }
+    
+    /* STANFORD-1031 */
+    .story-supplement.news-component {
+        word-wrap: break-word;
+        margin-top: 0.5em;
+    }
+    
+    .card.story-supplement .story-supplement-content a:hover,
+    .card.story-supplement .story-supplement-content a:focus {
+        text-decoration: none;
+    }
+    .panel.panel-card .card-content a.btn:hover, 
+    .story-supplement-content a.btn:hover, 
+    .panel.panel-card .card-content a.btn:focus, 
+    .story-supplement-content a.btn:focus {
+        text-decoration-line: underline !important;
+        background-color: #2E2D29 !important;
+        border-color: #2E2D29 !important;
+    }
+    
+    /* STANFORD-1026 */
+    div.pull-right-wide,
+    div.pull-left-wide{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    div.pull-right-wide img,
+    div.pull-left-wide img{
+        width: 100%;
+    }
+
+    aside + .panel-collection {
+        clear: both;
+    }
+    
+}

@@ -1,0 +1,112 @@
+$alignmentIndent: 0;
+$alignmentSpace: 50px;
+
+/* Main Fixes */
+.su-page-content {
+
+    .field__label.visually-hidden {
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    /* Images Caption */
+    .group-image-wrapper {
+
+        margin-top: 3.8rem;
+
+        .field--name-field-body {
+            font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.2em;
+            font-weight: 400;
+            margin: 0 auto;
+            /* color: rgb(109, 108, 105); */
+            color: #000;
+            max-width: 633px;
+            text-align: left;
+            clear: both;
+            padding-top: 0.4em;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            margin-bottom: 0px !important;
+        }
+    }
+
+    /* Quote Styling */
+    .noquote {
+        margin-top: 7.6rem;
+        padding-left: 5.2rem;
+        margin-bottom: 7.6rem;
+    }
+
+    .noquote .field__item::before {
+        content: "“";
+        line-height: 139.5px;
+        font-size: 93px;
+        margin-right: 1.3rem;
+        margin-top: -3.8rem;
+        right: 100%;
+        font-weight: 600;
+        color: rgb(46, 45, 41);
+        position: absolute;
+    }
+
+    .noquote .field__item {
+        position: relative;
+        font-family: "Source Serif 4", "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+        font-weight: 600;
+        font-size: 3.6rem;
+        color: rgb(46, 45, 41);
+        width: 100%;
+        line-height: 46.89px;
+    }
+
+    @media (max-width: 767px) {
+        .group-image-wrapper {
+            .field--name-field-body {
+                max-width: 582px;
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+        }
+
+        /* Quote Media */
+        .noquote {
+            margin-top: 3.8rem;
+            padding-left: 3.9rem;
+            margin-bottom: 3.8rem;
+        }
+        .noquote .field__item::before {
+            line-height: 109.5px;
+            font-size: 73px;
+            margin-right: 0.6rem;
+            margin-top: -2.5rem;
+        }
+
+        .noquote .field__item {
+            line-height: 33.6px;
+            font-size: 2.4rem;
+        }
+    }
+
+}
+
+/* Dark Mode fixes */
+.su-dark {
+    .su-page-content {
+
+        /* Image Captions */
+        .group-image-wrapper {
+            .field--name-field-body {
+                color: #FFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,320 @@
+$bgColor: #000;
+$bgTransparentColor: rgba(0, 0, 0, .85);
+$darkModeRed: #ec0909;
+$white: #fff;
+$transparent: transparent;
+
+.su-dark {
+    .modal.fade.news-component.in {
+        .modal-content {
+            background: $bgColor;
+        }
+    }
+
+    .modal .post-list a {
+        color: $white;
+    }
+
+    .modal.fade.news-component.in li::before {
+        color: $darkModeRed;
+    }
+
+    .slide .slide-content {
+        background-color: $bgTransparentColor;
+    }
+
+    article .social-share a {
+        color: $white;
+    }
+
+    .pullquote.news-component p {
+        color: $white;
+    }
+
+    .panel.panel-card .card-content a {
+        color: $darkModeRed;
+    }
+
+    .panel-collection .stories-masonry .meta+h3 {
+        color: $darkModeRed;
+    }
+
+    .masonry-grid .panel.panel-card.card {
+        border: 1px solid $white;
+
+        .meta+h3 {
+            color: $white;
+        }
+
+        p+h3 {
+            color: $darkModeRed;
+        }
+    }
+
+    article .card.related-stories h2 {
+        color: $darkModeRed;
+    }
+
+    .card .card-content a {
+        color: $white;
+    }
+
+    .card .card-content a:hover,
+    .card .card-content a:focus {
+        text-decoration: underline;
+        color: $darkModeRed;
+    }
+    
+    .panel.flex-grid.news-component .panel-card .card-content h3{
+        color: #FFF;
+    }
+
+    /* Red colour fix */
+    .su-page-content {
+
+        .card.story-supplement .story-supplement-content,
+        .card.story-supplement .story-supplement-content p {
+            color: #FFF;
+        }
+
+        .bottom-right-text {
+            color: rgb(236, 9, 9);
+        }
+
+        .color-red {
+            color: rgb(236, 9, 9);
+        }
+
+        .info-box h2 {
+            color: rgb(236, 9, 9);
+        }
+
+        .well h2 {
+            color: rgb(236, 9, 9);
+        }
+
+        .sidebar-section h2 {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .sidebar-section .side-byline {
+            color: rgb(236, 9, 9);
+        }
+
+        #top {
+            color: rgb(236, 9, 9);
+
+        }
+
+        aside.infobox {
+            color: #FFF;
+            border-top: #ec0909 solid 4px;
+        }
+
+        aside.infobox .post-list li::before,
+        .modal .post-list li::before {
+            color: rgb(236, 9, 9);
+        }
+
+        aside.infobox .story-supplement-content .post-list a:hover,
+        .modal .post-list a:hover {
+            color: rgb(236, 9, 9);
+        }
+
+        .story-supplement.card h2 {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .social.card .card-content a {
+            color: $white
+        }
+
+        .social.card .card-content a:hover,
+        .social.card .card-content a:focus {
+            color: $darkModeRed;
+            text-decoration: underline;
+
+        }
+
+        .bottom-right-text {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .panel.panel-card .card-content a {
+            color: rgb(236, 9, 9);
+        }
+
+        .slide .social-share .social-share-label {
+            color: rgb(236, 9, 9);
+        }
+
+        .panel.panel-card .card-content a {
+            color: rgb(236, 9, 9);
+
+        }
+
+        blockquote {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .card.related-story h2,
+        .card.related-stories h2 {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .byline {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .byline-link a:hover {
+            color: rgb(236, 9, 9);
+
+        }
+
+        #media-contact h2 {
+            color: rgb(236, 9, 9);
+
+        }
+
+        #bottom h2 {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .panel-collection .media-caption p.media-caption,
+        .media-caption {
+            color: rgb(255, 255, 255);
+        }
+
+        /* Box Shadow Fix */
+        .well {
+            box-shadow: 0 0 8px rgba(46, 45, 41, 1);
+            background-color: #000;
+        }
+
+        .unpublished-bug {
+            box-shadow: 0px 0px 10px rgba(46, 45, 41, 1), 0px 0px 5px rgba(46, 45, 41, 1);
+        }
+
+        .unpublished-bug:hover,
+        .unpublished-bug:active,
+        .unpublished-bug:focus {
+            box-shadow: 0px 0px 10px rgba(46, 45, 41, 1), 0px 7px 10px rgba(46, 45, 41, 1);
+        }
+
+        .card {
+            box-shadow: 0 0 8px rgba(46, 45, 41, 1);
+        }
+
+        .has-success .form-control {
+            -webkit-box-shadow: inset 0 1px 1px rgba(46, 45, 41, 1);
+            box-shadow: inset 0 1px 1px rgba(46, 45, 41, 1);
+        }
+
+        .modal-content {
+            -webkit-box-shadow: 0 3px 9px rgba(46, 45, 41, 1);
+            box-shadow: 0 3px 9px rgba(46, 45, 41, 1);
+        }
+
+        .card.social.style-card {
+            box-shadow: 0 0 8px rgba(46, 45, 41, 1);
+            background-color: #000;
+        }
+
+        .card.social .channel-icon a i {
+            color: #FFF;
+        }
+
+        .panel.content-posts .content-posts-posts .card.social {
+            box-shadow: 0 0 8px rgba(46, 45, 41, 1);
+        }
+
+        .masonry-highlight .topic-filter input[type="checkbox"]:hover+label {
+            box-shadow: inset 0 0 4px 0 rgba(46, 45, 41, 1), inset 0 0 10px 0 rgba(46, 45, 41, 1);
+        }
+
+        .masonry-highlight .panel.panel-card.card--highlight {
+            box-shadow: rgba(46, 45, 41, 1) 0 0 4px, rgba(46, 45, 41, 1) 0 0 20px;
+        }
+
+        /* Custom Fixes for Contrast */
+        #masonry-highlight-1 .card[data-topic="film"] .meta {
+            background-color: #c25700
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #ec0909;
+            border-color: #ec0909;
+        }
+
+        .btn-primary {
+            background-color: #ec0909 !important;
+            border-color: #ec0909 !important;
+            color: white !important;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active {
+            background-color: #ec0909 !important;
+            border-color: #ec0909 !important;
+            color: white !important;
+        }
+
+        .btn-primary a {
+            color: white !important;
+        }
+
+        .btn-primary a:hover,
+        .btn-primary a:focus,
+        .btn-primary a:active {
+            background-color: #ec0909 !important;
+            border-color: #ec0909 !important;
+            color: white !important;
+            text-decoration: underline;
+        }
+
+        .panel-collection p.media-caption,
+        .panel-collection figcaption,
+        .news-component p.media-caption {
+            color: #FFF;
+        }
+
+        .align-center.hidden-print > p.media-caption,
+        .align-center>div.media-attrib,
+        .pull-right>p.media-caption,
+        .pull-left>p.media-caption,
+        .pull-right>div.media-attrib,
+        .pull-left>div.media-attrib {
+            color: #FFF;
+        }
+
+        .card.story-supplement h2 {
+            color: rgb(236, 9, 9);
+
+        }
+
+        .card .card-content .meta a {
+            color: $darkModeRed;
+        }
+
+        .card .card-content .meta a:focus,
+        .card .card-content .meta:hover {
+            text-decoration: underline;
+        }
+        .panel.panel-card .card-content a.btn:hover, 
+        .story-supplement-content a.btn:hover, 
+        .panel.panel-card .card-content a.btn:focus, 
+        .story-supplement-content a.btn:focus {
+            border-color: #FFF !important;
+        }
+
+    }
+}
